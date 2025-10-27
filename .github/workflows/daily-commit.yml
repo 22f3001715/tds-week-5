@@ -5,6 +5,9 @@ on:
     # Runs every day at 07:30 UTC (choose a specific hour/minute — not wildcards)
     - cron: '30 7 * * *'
   workflow_dispatch:  # allows manual triggering for testing
+  
+permissions:
+  contents: write
 
 jobs:
   daily-commit:
